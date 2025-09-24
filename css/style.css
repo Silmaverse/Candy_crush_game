@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    text-align: center;
+    min-height: 100vh;
+    font-family: "Noto Sans", sans-serif;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#board{
+    height: 450px;
+    width:450px;
+    background-color: lightblue;
+    border:5px solid slategray;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+#board img{
+    width: 50px;
+    height: 50px;
+}
