@@ -35,7 +35,7 @@ function startGame() {
 
       let tile = document.createElement("img");
       tile.id = r.toString() + "_" + c.toString();
-      tile.src = "../images/" + randomCandy() + ".png";
+      tile.src = "images/" + randomCandy() + ".png";
 
       // Drag functionlity
       tile.addEventListener("dragstart", dragStart); // click on a candy , initializing  darg process
@@ -144,9 +144,9 @@ function crushThree() {
         candy2.src == candy3.src &&
         !candy1.src.includes("blank")
       ) {
-        candy1.src = "../images/blank.png";
-        candy2.src = "../images/blank.png";
-        candy3.src = "../images/blank.png";
+        candy1.src = "images/blank.png";
+        candy2.src = "images/blank.png";
+        candy3.src = "images/blank.png";
 
         score += 3;
       }
@@ -165,9 +165,9 @@ function crushThree() {
         candy2.src == candy3.src &&
         !candy1.src.includes("blank.png")
       ) {
-        candy1.src = "../images/blank.png";
-        candy2.src = "../images/blank.png";
-        candy3.src = "../images/blank.png";
+        candy1.src = "images/blank.png";
+        candy2.src = "images/blank.png";
+        candy3.src = "images/blank.png";
 
         score += 3;
       }
@@ -189,10 +189,10 @@ function crushFour() {
         candy2.src == candy3.src &&  candy3.src == candy4.src &&
         !candy1.src.includes("blank")
       ) {
-        candy1.src = "../images/blank.png";
-        candy2.src = "../images/blank.png";
-        candy3.src = "../images/blank.png";
-        candy4.src = "../images/blank.png";
+        candy1.src = "images/blank.png";
+        candy2.src = "images/blank.png";
+        candy3.src = "images/blank.png";
+        candy4.src = "images/blank.png";
         
 
         score += 4;
@@ -213,10 +213,10 @@ function crushFour() {
         candy2.src == candy3.src && candy3.src == candy4.src &&
         !candy1.src.includes("blank.png")
       ) {
-        candy1.src = "../images/blank.png";
-        candy2.src = "../images/blank.png";
-        candy3.src = "../images/blank.png";
-        candy4.src = "../images/blank.png";
+        candy1.src = "images/blank.png";
+        candy2.src = "images/blank.png";
+        candy3.src = "images/blank.png";
+        candy4.src = "images/blank.png";
 
         score += 4;
       }
@@ -240,11 +240,11 @@ function crushFive() {
         candy2.src == candy3.src &&  candy3.src == candy4.src && candy4.src== candy5.src &&
         !candy1.src.includes("blank")
       ) {
-        candy1.src = "../images/blank.png";
-        candy2.src = "../images/blank.png";
-        candy3.src = "../images/blank.png";
-        candy4.src = "../images/blank.png";
-        candy5.src = "../images/blank.png";
+        candy1.src = "images/blank.png";
+        candy2.src = "images/blank.png";
+        candy3.src = "images/blank.png";
+        candy4.src = "images/blank.png";
+        candy5.src = "images/blank.png";
 
         
 
@@ -267,11 +267,11 @@ function crushFive() {
         candy2.src == candy3.src && candy3.src == candy4.src && candy4.src==candy5.src &&
         !candy1.src.includes("blank.png")
       ) {
-        candy1.src = "../images/blank.png";
-        candy2.src = "../images/blank.png";
-        candy3.src = "../images/blank.png";
-        candy4.src = "../images/blank.png";
-        candy5.src = "../images/blank.png";
+        candy1.src = "images/blank.png";
+        candy2.src = "images/blank.png";
+        candy3.src = "images/blank.png";
+        candy4.src = "images/blank.png";
+        candy5.src = "images/blank.png";
 
         score += 5;
       }
@@ -331,7 +331,7 @@ function slideCandy(){
       }
 
       for(let r =ind ; r>=0; r--){
-        board[r][c].src ="../images/blank.png"
+        board[r][c].src ="images/blank.png"
       }
 
 
@@ -345,7 +345,7 @@ function generateCandy(){
 
   for(let c=0 ; c<column ;c++){
     if(board[0][c].src.includes("blank")){
-       board[0][c].src ="../images/" + randomCandy() + ".png"
+       board[0][c].src ="images/" + randomCandy() + ".png"
 
     }
   }
