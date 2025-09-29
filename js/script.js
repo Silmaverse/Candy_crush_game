@@ -1,4 +1,7 @@
 let candies = ["Blue", "Orange", "Red", "Green", "Yellow", "Purple"];
+let btn = document.querySelector("button");
+let countClick =1;
+let interval;
 let board = [];
 let row = 9;
 let column = 9;
@@ -11,12 +14,54 @@ window.onload = function () {
   startGame();
 
   //1/10 milisecond it calls a function
-  window.setInterval(function () {
+   interval = setInterval(function () {
     crushCandy();
     slideCandy();
     generateCandy();
   }, 100);
+
 };
+
+  btn.addEventListener("click" ,()=>{
+
+      if(countClick >1){
+        return;
+      }
+
+      countClick+=1;
+      let h1= document.querySelector("h1");
+      h1.innerHTML = "Do you want to exit the game";
+      clearInterval(interval);
+      let btny =document.createElement("button");
+      btny.classList.add("btn1")
+      let btnN = document.createElement("button");
+      btnN.classList.add("btn2")
+      btny.innerHTML ="Yes";
+      btnN.innerHTML ="NO";
+      let div =document.createElement("div");
+      div.classList.add("btns")
+      document.querySelector(".exit").style.top = "7%";
+      document.querySelector(".box").appendChild(div);
+      div.appendChild(btny);
+      div.appendChild(btnN);
+
+      btny.addEventListener("click" ,()=>{
+
+        window.location.reload()
+      })
+
+      btnN.addEventListener( "click" ,()=>{
+        document.querySelector(".exit").style.top = "1%";
+         div.remove();
+         h1.innerHTML =`Score : ${score}`;
+         countClick =1
+
+      })
+
+
+
+    
+  })
 
 // random candy function
 

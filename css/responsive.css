@@ -1,0 +1,63 @@
+/* -----extra small device */
+@media (min-width:0px) and (max-width:575.98px){
+    #board {
+        height: 400px;
+        width: 280px;
+
+    }
+    
+    #board img {
+        width: 30px;
+        height: 40px;
+    }
+
+  .exit {
+        padding: 10px 14px;
+        font-size: 16px;
+        
+    }
+
+    .btn1 {
+        width: 60px;
+        padding: 10px 8px;
+    }
+
+     .btn2 {
+        width: 60px;
+        padding: 10px 8px;
+    }
+
+    h1 {
+        
+        font-size: 30px;
+    }
+
+
+}
+
+/* ------small device */
+
+@media (min-width: 576px) and (max-width:767px){
+ 
+  .exit {	
+	padding: 8px 18px;
+    font-size: 18px;
+}
+
+    .btn1 {
+        width: 60px;
+        padding: 10px 8px;
+    }
+
+     .btn2 {
+        width: 60px;
+        padding: 10px 8px;
+    }
+
+    h1 {
+        
+        font-size: 30px;
+    }
+
+
+}
